@@ -274,7 +274,12 @@ save_cell_angle
     _definition.update           2023-07-01
     _description.text
 ;
-     The angle between the bounding cell axes.
+     Unit-cell angle of the reported structure.
+     The values of _refln.index_h, *_k, *_l must correspond to the
+     cell defined by these values and _cell.length_a, *_b and *_c.
+     The values of _diffrn_refln.index_h, *_k, *_l may not correspond
+     to these values if a cell transformation took place following the
+     measurement of the diffraction intensities.
 ;
     _type.purpose                Measurand
     _type.source                 Derived
@@ -290,7 +295,7 @@ save_cell_angle_su
     _definition.update           2023-07-01
     _description.text
 ;
-     Standard uncertainty of the angle between the bounding cell axes.
+     Standard uncertainty of the unit-cell angle.
 ;
     _type.purpose                SU
     _type.source                 Related
@@ -305,7 +310,12 @@ save_cell_length
     _definition.update           2024-07-17
     _description.text
 ;
-     The length of each cell axis.
+     Unit-cell length along a cell axis for the reported structure.
+     The values of _refln.index_h, *_k, *_l must correspond to the
+     cell defined by these values and CELL_ANGLE values. The values of
+     _diffrn_refln.index_h, *_k, *_l may not correspond to these values if
+     a cell transformation took place following the measurement of the
+     diffraction intensities.
 ;
     _type.purpose                Measurand
     _type.source                 Derived
@@ -321,7 +331,7 @@ save_cell_length_su
     _definition.update           2023-07-01
     _description.text
 ;
-     Standard uncertainty of the length of each cell axis.
+     Standard uncertainty of the length along a cell axis.
 ;
     _type.purpose                SU
     _type.source                 Related
