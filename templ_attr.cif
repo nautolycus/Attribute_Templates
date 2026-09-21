@@ -312,10 +312,10 @@ save_cell_length
 ;
      Unit-cell length along a cell axis for the reported structure.
      The values of _refln.index_h, *_k, *_l must correspond to the
-     cell defined by these values and CELL_ANGLE values. The values of
-     _diffrn_refln.index_h, *_k, *_l may not correspond to these values if
-     a cell transformation took place following the measurement of the
-     diffraction intensities.
+     cell defined by these values and _cell.angle_alpha, *_beta and
+     *_gamma. The values of _diffrn_refln.index_h, *_k, *_l may not
+     correspond to these values if a cell transformation took place
+     following the measurement of the diffraction intensities.
 ;
     _type.purpose                Measurand
     _type.source                 Derived
